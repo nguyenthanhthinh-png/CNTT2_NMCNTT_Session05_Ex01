@@ -1,0 +1,27 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\thanhthinh> mkdir "Smart Farm Project"
+
+
+    Directory: C:\Users\thanhthinh
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/16/2026   3:19 PM                Smart Farm Project
+
+
+PS C:\Users\thanhthinh> mkdir "Smart Farm Project\src\sensors\temperature" -Force
+
+
+    Directory: C:\Users\thanhthinh\Smart Farm Project\src\sensors
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/16/2026   3:19 PM                temperature
+
+
+PS C:\Users\thanhthinh>
+fwd-i-search: _

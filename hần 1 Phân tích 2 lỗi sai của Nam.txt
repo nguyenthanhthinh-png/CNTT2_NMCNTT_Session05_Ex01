@@ -1,0 +1,14 @@
+hần 1: Phân tích 2 lỗi sai của Nam
+Lỗi 1: Tên thư mục có khoảng trắng
+mkdir Smart Farm Project
+
+
+- PowerShell hiểu Smart, Farm, Project là các đối số riêng biệt, không phải một tên thư mục duy nhất.
+- Cách sửa: Đặt tên thư mục trong dấu ngoặc kép: "Smart Farm Project".
+Lỗi 2: Đường dẫn thư mục lồng nhau
+cd Smart Farm Project
+mkdir src/sensors/temperature
+
+
+- Lệnh cd Smart Farm Project không xử lý đúng tên thư mục có khoảng trắng vì thiếu dấu ngoặc kép.
+- Lệnh mkdir src/sensors/temperature sử dụng dấu / có thể hoạt động trong PowerShell hiện đại, nhưng cách tạo thư mục lồng nhau rõ ràng và tương thích hơn là dùng New-Item -ItemType Directory -Force với đường dẫn phù hợp. Nếu thư mục cha chưa tồn tại, lệnh mkdir có thể không tạo được toàn bộ cấu trúc như mong muốn tùy cách gọi và phiên bản.
